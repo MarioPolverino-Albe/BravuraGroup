@@ -1,0 +1,29 @@
+* {
+  font-family: var(--font-albert);
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  max-width: 1329px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 34px;
+  }
+  .container.p-0 {
+    padding: 0;
+  }
+}

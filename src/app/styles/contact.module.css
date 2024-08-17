@@ -1,0 +1,232 @@
+.contactMain {
+  background-color: #000;
+  padding: 43px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.contactMain * {
+  box-sizing: border-box;
+}
+.contactMainInner {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.contactUs {
+  flex: 1;
+  margin-right: 77px;
+  padding: 33px 0;
+}
+.contactInfo {
+  background: #343434;
+  padding: 33px 26px;
+  border-radius: 5px;
+  width: 649px;
+}
+
+.contactHead {
+  margin-bottom: 30px;
+}
+
+.contactHead h3 {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.contactHead p {
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 36px;
+}
+
+.inputs input {
+  background-color: #000;
+  outline: none;
+  border: none;
+  width: 100%;
+  border: 1px solid #ffffff80;
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.textBox input::placeholder,
+.inputs input::placeholder,
+.textBox textarea::placeholder {
+  color: #fff;
+}
+
+.textBox textarea {
+  background-color: #000;
+  outline: none;
+  border: none;
+  width: 100%;
+  border: 1px solid #ffffff80;
+  padding: 14px 20px;
+  height: 126px;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.contactUs button {
+  border-radius: 25px;
+  background-color: #fff;
+  color: #000;
+  padding: 11px 22px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contactUs button:hover {
+  background-color: #ccc;
+}
+
+.contactUs button:active {
+  background-color: #aaa;
+}
+.contactInfoImg {
+  width: 100%;
+  position: relative;
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  position: relative;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.links li {
+  margin-right: 27px;
+}
+.links li a {
+  color: white;
+  font-size: 48px;
+}
+.siteLink a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.mapHead {
+  border: 1px solid #ffffff80;
+  padding: 7px;
+  height: 126px;
+  border-radius: 10px;
+  margin: 48px 0 40px;
+  position: relative;
+}
+.mapHead::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: #000000d7;
+  z-index: 1;
+}
+.addressBox p {
+  font-size: 12;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .contactInfo {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contactUs {
+    margin-right: 40px;
+  }
+  .links li a {
+    font-size: 40px;
+  }
+  .mapHead {
+    margin: 38px 0 30px;
+  }
+  .siteLink a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .links li a {
+    font-size: 30px;
+  }
+  .links li {
+    margin-right: 17px;
+  }
+  .siteLink a {
+    font-size: 18px;
+  }
+  .contactHead {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactMainInner {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactInfo {
+    width: 100%;
+    border-radius: unset;
+    padding: 34px;
+  }
+  .contactUs {
+    width: 100%;
+    margin-right: 0;
+    padding: 34px;
+  }
+  .inputs {
+    margin-bottom: 25px;
+    gap: 25px;
+  }
+  .textBox textarea {
+    margin-bottom: 25px;
+  }
+  .contactMain {
+    padding: 0;
+  }
+  .mapHead {
+    height: 239px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .inputs {
+    flex-wrap: wrap;
+  }
+}
