@@ -17,15 +17,13 @@ const Contact = () => {
               <p>We will reply to you within 24 hours</p>
             </div>
             <form
-              name="contact-new-form"
-              id="contact-new-form"
+              name="contact-form"
+              id="contact-form"
               method="POST"
-              encType="application/x-www-form-urlencoded"
               className={styles.form}
-              action="/success"
               data-netlify="true"
             >
-              <input type="hidden" name="form-name" value="contact-new-form" />
+              <input type="hidden" name="form-name" value="contact-form" />
 
               <div className={styles.inputs}>
                 <input
