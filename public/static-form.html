@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Contact Form</title>
+  </head>
+  <body>
+    <form
+      name="contact-form"
+      id="contact-form"
+      method="POST"
+      enctype="application/x-www-form-urlencoded"
+      data-netlify="true"
+      netlify
+    >
+      <input type="hidden" name="form-name" value="contact-form" />
+
+      <div>
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="email" name="your_email" placeholder="Email" required />
+      </div>
+      <div>
+        <input type="text" name="your_message" placeholder="Your message" />
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
