@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "../../styles/contact.module.css";
 import {
   IoLogoLinkedin,
@@ -7,6 +8,33 @@ import {
 } from "react-icons/io5";
 
 const Contact = () => {
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      setStatus("pending");
+      setError(null);
+      const form = event.target;
+      const formData = new FormData(form);
+      const res = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+      if (res.ok) {
+        setStatus("ok");
+        form.reset();
+      } else {
+        throw new Error(`Error: ${res.status} ${res.statusText}`);
+      }
+    } catch (e) {
+      setStatus("error");
+      setError(e.message);
+    }
+  };
+
   return (
     <div className={styles.contactMain}>
       <div className="container p-0">
@@ -18,10 +46,9 @@ const Contact = () => {
             </div>
             <form
               name="contact-form"
-              id="contact-form"
               method="POST"
-              className={styles.form}
               data-netlify="true"
+              onSubmit={handleFormSubmit}
             >
               <input type="hidden" name="form-name" value="contact-form" />
 
@@ -44,9 +71,21 @@ const Contact = () => {
                   type="text"
                   name="your_message"
                   placeholder="Your message"
+                  required
                 />
               </div>
-              <button type="submit">Send</button>
+              {/* <button type="submit">Send</button> */}
+              <button
+                type="submit"
+                disabled={status === "pending" || status === "ok"}
+              >
+                {status === "ok"
+                  ? "Message sent successfully"
+                  : status === "pending"
+                  ? "Sending..."
+                  : "Send message"}
+              </button>
+              {status === "error" && <div>Error: {error}</div>}
             </form>
           </div>
 
