@@ -8,6 +8,7 @@ import Property from "../../assets/Property-logo.svg";
 import Biologics from "../../assets/biologics-logo.svg";
 import Bookkeeing from "../../assets/bookkeeing-logo.svg";
 import FaithTee from "../../assets/faith-tee.svg";
+import Bayswater from "../../assets/bayswater-logo-2.jpg";
 
 const HeroSection = () => {
   const handleScroll = (id) => {
@@ -24,19 +25,46 @@ const HeroSection = () => {
         </div>
         <div className={styles.cardHead}>
           <div className={styles.card}>
-            <Image src={Investment} alt="Investment Logo" />
+            <a
+              href="https://www.bravurainvestment.com" target="_blank"
+            >
+              <Image src={Investment} alt="Investment Logo" />
+            </a>
           </div>
           <div className={styles.card}>
+          <a
+              href="https://bravuraproperty.com.au/" target="_blank"
+            >
             <Image src={Property} alt="Property Logo" />
+            </a>
           </div>
           <div className={styles.card}>
+          <a
+              href="https://www.explorbiologics.com/" target="_blank"
+            >
             <Image src={Biologics} alt="Biologics Logo" />
+            </a>
           </div>
           <div className={styles.card}>
-            <Image src={Bookkeeing} alt="Bookkeeing Logo" />
+          <a
+              href="https://360bookkeeping.com.au/" target="_blank"
+            >
+            <Image src={Bookkeeing} alt="Bookkeeping Logo" />
+            </a>
           </div>
           <div className={styles.card}>
+          <a
+              href="https://www.faithtee.com.au/" target="_blank"
+            >
             <Image src={FaithTee} alt="FaithTee Logo" />
+            </a>
+          </div>
+          <div className={styles.card}>
+          <a
+              href="https://www.bayswaterassetmanagement.com.au/" target="_blank"
+            >
+            <Image src={Bayswater} alt="Bayswater Logo" />
+            </a>
           </div>
         </div>
         <div className={styles.paraHead}>
@@ -46,10 +74,8 @@ const HeroSection = () => {
           </p>
           <p>
             We support the growth of the Bravura brand by{" "}
-            <span>developing and nurturing valuable</span> Bravura businesses
-            <em>
-              and aspire to <span>make a difference</span> in the world we live.
-            </em>
+            <span>developing and nurturing valuable</span> Bravura businesses 
+            and aspire to <span>make a difference</span> in the world we live.
           </p>
         </div>
       </div>

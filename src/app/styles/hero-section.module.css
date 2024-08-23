@@ -35,6 +35,23 @@
   box-sizing: border-box;
   height: 158px;
 }
+
+.card:hover {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 60.2px 0 rgba(0, 0, 0, 0.35);
+  width: 30%;
+  max-width: 399px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 31px;
+  box-sizing: border-box;
+  height: 158px;
+  transition: all 0.3s;
+}
+
 .card img {
   object-fit: contain;
   max-width: 293px;

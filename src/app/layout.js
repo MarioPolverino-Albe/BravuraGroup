@@ -11,11 +11,12 @@ const albert_init = Albert_Sans({
   subsets: ["latin"],
   variable: "--font-albert",
 });
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={albert_init.variable}>{children}</body>
     </html>
