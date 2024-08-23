@@ -75,7 +75,7 @@ const Contact = () => {
               <a href="#">www.bravuragroup.com.au</a>
             </div> */}
             <div className={styles.mapHead}>
-              <a href="https://www.google.com/maps/place/Level+12%2F90+Arthur+St,+North+Sydney+NSW+2060,+Australia/@-33.8401911,151.2094699,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12aef2da8f556f:0x11098b2887e83c9!8m2!3d-33.8401911!4d151.2094699!16s%2Fg%2F11qpkl713g?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D">
+              <a href="https://www.google.com/maps/place/Level+12%2F90+Arthur+St,+North+Sydney+NSW+2060,+Australia/@-33.8401911,151.2094699,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12aef2da8f556f:0x11098b2887e83c9!8m2!3d-33.8401911!4d151.2094699!16s%2Fg%2F11qpkl713g?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.9680328493995!2d151.2061233152128!3d-33.86748698065578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3f65bc0bbd%3A0xf537a2f6e270df79!2s90%20Arthur%20St%2C%20North%20Sydney%20NSW%202060%2C%20Australia!5e0!3m2!1sen!2sus!4v1626768276343!5m2!1sen!2sus"
                   className={styles.mapIframe}
