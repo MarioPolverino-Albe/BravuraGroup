@@ -9,6 +9,11 @@ import Biologics from "../../assets/biologics-logo.svg";
 import Bookkeeing from "../../assets/bookkeeing-logo.svg";
 import FaithTee from "../../assets/faith-tee.svg";
 import Bayswater from "../../assets/bayswater-logo-2.jpg";
+import BravuraProjects from "../../assets/bravura-projects-logo.svg";
+import AssetManagement from "../../assets/asset-management-logo.svg";
+import FaithTeeJournals from "../../assets/faith-tee-journals-logo.svg";
+
+
 
 const HeroSection = () => {
   const handleScroll = (id) => {
@@ -40,9 +45,30 @@ const HeroSection = () => {
           </div>
           <div className={styles.card}>
           <a
-              href="https://www.explorbiologics.com/" target="_blank"
+              href="http://www.bravuraprojects.com.au" target="_blank"
             >
-            <Image src={Biologics} alt="Biologics Logo" />
+            <Image src={BravuraProjects} alt="Project Logo" />
+            </a>
+          </div>
+          <div className={styles.card}>
+          <a
+              href="http://www.bravuraassetmanangement.com.au" target="_blank"
+            >
+            <Image src={AssetManagement} alt="Asset Management Logo" />
+            </a>
+          </div>
+          <div className={styles.card}>
+          <a
+              href="https://www.faithtee.com.au/" target="_blank"
+            >
+            <Image src={FaithTee} alt="FaithTee Logo" />
+            </a>
+          </div>
+          <div className={styles.card}>
+          <a
+              href="http://www.thefaithteejournals.com" target="_blank"
+            >
+            <Image src={FaithTeeJournals} alt="FaithTee Journals Logo" />
             </a>
           </div>
           <div className={styles.card}>
@@ -54,9 +80,9 @@ const HeroSection = () => {
           </div>
           <div className={styles.card}>
           <a
-              href="https://www.faithtee.com.au/" target="_blank"
+              href="https://www.explorbiologics.com/" target="_blank"
             >
-            <Image src={FaithTee} alt="FaithTee Logo" />
+            <Image src={Biologics} alt="Biologics Logo" />
             </a>
           </div>
           <div className={styles.card}>
